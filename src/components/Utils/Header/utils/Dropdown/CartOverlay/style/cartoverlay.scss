@@ -1,0 +1,258 @@
+@import '../../../../../../../style/colors';
+@import '../../../../../../../style/fonts';
+
+.cart-overlay {
+  position: relative;
+
+  font-family: 'Raleway', sans-serif;
+  color: $main-text-color;
+}
+
+.sidebar {
+  background-color: rgba(57, 55, 72, 0.22);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  overflow-x: hidden;
+  opacity: 0;
+
+  transition: 0.8s;
+
+  display: flex;
+}
+
+.cart-overlay-content {
+  background-color: $main-color;
+  width: auto;
+
+  max-height: 70vh;
+
+  overflow-y: auto;
+  position: absolute;
+  right: 5%;
+  top: 0;
+
+  padding: 25px 15px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 141, 141);
+    border-radius: 3px;
+
+    &:hover {
+      background-color: rgb(118, 118, 118);
+    }
+  }
+}
+
+.show-cart {
+  opacity: 1;
+  width: 100vw;
+}
+
+.bag-quantity {
+  display: flex;
+  column-gap: 5px;
+}
+
+.bag-quantity p:first-child {
+  font-weight: map-get($font-weights, bold);
+  text-transform: capitalize;
+}
+
+.empty-bag {
+  text-align: center;
+}
+
+.attribute-selected-bag {
+  background-color: $main-text-color;
+  color: $main-color;
+}
+
+.product-attributes-bag {
+  display: flex;
+  column-gap: 12px;
+  list-style: none;
+}
+
+.product-attributes-bag li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: map-get($font-weights, regular);
+  font-size: 14px;
+
+  border: 1px solid $main-text-color;
+  width: 40px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-color-bag {
+  display: flex;
+  column-gap: 12px;
+  list-style: none;
+}
+
+.product-color-bag li {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-selected-bag {
+  border: 2px solid $main-color;
+  outline: 2px solid $accent-color;
+}
+
+.bag-img img {
+  width: 125px;
+  height: 100%;
+
+  object-fit: cover;
+
+  user-select: none;
+}
+
+.cart-page-bag {
+  margin: 0px;
+  max-height: 100%;
+
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  column-gap: 10px;
+}
+
+.img-section-cart-page-bag {
+  display: flex;
+  column-gap: 5px;
+
+  justify-content: space-between;
+}
+
+.cart-page-brand-and-name-bag p {
+  font-weight: map-get($font-weights, light) !important;
+  font-size: 16px;
+}
+
+.cart-page-brand-and-name-bag p:last-child {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cart-page-price-bag p {
+  font-size: 16px !important;
+  font-weight: map-get($font-weights, medium) !important;
+}
+
+.attribute-name-bag {
+  font-weight: map-get($font-weights, regular) !important;
+  text-transform: capitalize !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 14px !important;
+
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.bag-quantity {
+  margin-bottom: 30px;
+}
+
+.bag-content {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 20px;
+}
+
+.cart-page-quantity-bag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.cart-page-quantity-bag p {
+  user-select: none;
+}
+
+.cart-page-quantity-bag svg {
+  cursor: pointer;
+}
+
+.product-color-bag {
+  display: flex;
+  column-gap: 12px;
+  list-style: none;
+}
+
+.product-color-bag li {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bag-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: map-get($font-weights, medium);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bag-checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  column-gap: 10px;
+}
+
+.bag-checkout-buttons button {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+
+  width: 150px;
+  height: 43px;
+
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: map-get($font-weights, semi-bold);
+}
+
+.view-bag-button {
+  background-color: $main-color;
+}
+
+.bag-checkout-buttons a {
+  text-decoration: none;
+  border: 1px solid $main-text-color;
+}
+
+.checkout-button {
+  background-color: $accent-color;
+  color: $main-color;
+}

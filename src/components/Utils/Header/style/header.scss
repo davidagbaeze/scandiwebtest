@@ -1,0 +1,103 @@
+@import '../../../../style/colors';
+@import '../../../../style/fonts';
+
+.header-wrapper {
+  font-family: 'Raleway', sans-serif;
+
+  background-color: $main-color;
+  color: $main-text-color;
+  height: 80px;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 2;
+}
+
+.header-wrapper .header-links ul {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.header-wrapper .header-links ul > li a {
+  text-transform: uppercase;
+  font-weight: map-get($font-weights, regular);
+  font-size: 16px;
+  line-height: 120%;
+  color: $main-text-color;
+  text-decoration: none;
+
+  padding-bottom: 25px;
+}
+
+.active {
+  border-bottom: 3px solid $accent-color;
+}
+
+.header-currency-cart {
+  position: relative;
+}
+
+.header-wrapper .header-currency-cart {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 35px;
+}
+
+.header-wrapper .header-currency-cart .currencies {
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: map-get($font-weights, medium);
+
+  position: relative;
+}
+
+.cart-vector {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.show-cart {
+  width: 100vw;
+}
+
+.header-quantity {
+  position: absolute;
+
+  z-index: -1;
+
+  left: 70%;
+  bottom: 50%;
+
+  clip-path: circle(50% at 50% 50%);
+  background-color: $main-text-color;
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-quantity p {
+  font-weight: map-get($font-weights, bold);
+  color: $main-color;
+
+  font-size: 13px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}

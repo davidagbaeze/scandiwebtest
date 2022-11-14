@@ -1,0 +1,117 @@
+@import '../../../style/colors';
+@import '../../../style/fonts';
+
+.cart {
+  font-family: 'Raleway', sans-serif;
+  color: $main-text-color;
+}
+
+.cart h1 {
+  font-size: 32px;
+  font-weight: map-get($font-weights, bold);
+  text-transform: uppercase;
+
+  margin: 35px 0px 35px 70px;
+}
+
+.cart-page-brand-and-name p:last-child {
+  margin-bottom: 0px;
+}
+
+.cart-page-price p:last-child {
+  margin-bottom: 10px;
+}
+
+.attribute-name-product-page {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.attributes-section-product-page p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.product-attributes-cart-page li,
+.product-color-cart-page li {
+  cursor: default;
+}
+
+.cart-page {
+  margin-top: 50px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  max-height: 100%;
+}
+
+.details-section-cart-page {
+  max-height: 100%;
+}
+
+.cart-page-quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-page-quantity svg {
+  cursor: pointer;
+}
+
+.cart-page-quantity p {
+  user-select: none;
+}
+
+.order-section {
+  margin-top: 35px;
+  margin-left: 70px;
+  margin-bottom: 35px;
+}
+
+.order-details {
+  display: flex;
+  column-gap: 10px;
+  font-size: 24px;
+}
+
+.order-details div:first-child > p,
+.order-details div:last-child > p {
+  margin-bottom: 10px;
+}
+
+.order-details div:first-child {
+  font-weight: map-get($font-weights, medium);
+}
+
+.order-details div:last-child {
+  font-weight: map-get($font-weights, bold);
+}
+
+.order-section button {
+  margin: 20px 0px 20px 0px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  background-color: $accent-color;
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: map-get($font-weights, semi-bold);
+
+  width: 292px;
+  height: 52px;
+
+  transition: 0.2s ease;
+}
+
+.img-section-cart-page img {
+  object-fit: contain !important;
+}
+
+.order-section button:hover {
+  opacity: 0.9;
+}
+
+.empty-cart {
+  margin-left: 70px;
+}

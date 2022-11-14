@@ -1,0 +1,38 @@
+@import '../../../style/colors';
+@import '../../../style/fonts';
+
+.category-page {
+  margin-left: 70px;
+  margin-right: 30px;
+  margin-bottom: 35px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  color: $main-text-color;
+}
+
+.category-page h2 {
+  margin: 70px 0px 70px 0px;
+  text-transform: capitalize;
+  font-size: 42px;
+  font-weight: map-get($font-weights, regular);
+}
+
+.product-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 0px;
+
+  column-gap: 30px;
+  row-gap: 60px;
+}
+
+.spinner {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 00px;
+
+  transform: translate(-50%, -50%);
+}

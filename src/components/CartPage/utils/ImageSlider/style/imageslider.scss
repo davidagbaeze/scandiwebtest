@@ -1,0 +1,22 @@
+.slider {
+  position: relative;
+}
+.slider img {
+  height: 288px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+}
+
+.img-nav {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+
+  position: absolute;
+
+  right: 10%;
+  bottom: 8%;
+}
