@@ -68,11 +68,11 @@ class App extends Component {
                 return (
                   <Routes>
                     <Route
-                      path='/sw-erd-test'
-                      element={<Navigate to='/sw-erd-test/all' />}
+                      path='/test'
+                      element={<Navigate to='/test/all' />}
                     />
                     <Route
-                      path={`/sw-erd-test/${categories[0].name}`}
+                      path={`/test/${categories[0].name}`}
                       element={
                         <CategoryPage
                           currency={currencyKey}
@@ -81,7 +81,7 @@ class App extends Component {
                       }
                     />
                     <Route
-                      path={`/sw-erd-test/${categories[1].name}`}
+                      path={`/test/${categories[1].name}`}
                       element={
                         <CategoryPage
                           currency={currencyKey}
@@ -90,7 +90,7 @@ class App extends Component {
                       }
                     />
                     <Route
-                      path={`/sw-erd-test/${categories[2].name}`}
+                      path={`/test/${categories[2].name}`}
                       element={
                         <CategoryPage
                           currency={currencyKey}
@@ -100,14 +100,14 @@ class App extends Component {
                     />
 
                     <Route
-                      path='/sw-erd-test/product/:productID'
+                      path='/test/product/:productID'
                       element={
                         <ProductPage category='0' currency={currencyKey} />
                       }
                     />
                     <Route
                       exact
-                      path='/sw-erd-test/cart'
+                      path='/test/cart'
                       element={<CartPage currency={currencyKey} />}
                     />
                     <Route path='*' element={<ErrorPage />} />

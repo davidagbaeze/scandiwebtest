@@ -6,7 +6,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter } from 'react-router-dom';
 
 // Apollo client setup
-const GRAPHQL_URI = 'http://localhost:4000/'
+const GRAPHQL_URI = 'https://mockstore-endpoint.herokuapp.com/'
 const client = new ApolloClient({
   uri: GRAPHQL_URI,
   cache: new InMemoryCache(),
